@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;900&family=Dancing+Script:wght@600&family=Indie+Flower&family=Oswald:wght@600&family=STIX+Two+Text:ital,wght@1,500&display=swap');
+p{
+    font-family: 'STIX Two Text', serif;
+    line-height:1.8;
+    text-align: justify;
+}
+a,h1,h2,h3,li{
+    font-family: 'Acme', sans-serif;  
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    box-sizing: border-box;
+    background-color:silver;
+}
+ul{
+    list-style:none;
+}
+nav{
+    display:grid;
+    grid-template-columns:1fr 7fr;
+    color:#000;
+    align-items:center;
+    background-color:silver;
+}
+:root{
+   --h2-color:orange;
+   --a-color:rgb(224, 24, 24);
+   --spt-color:rgb(16, 197, 10);
+   --ent-color:rgb(255, 0, 128);
+   --tec-color:rgb(5, 5, 211);
+}
+nav img{
+    width:170px;
+}
+nav .nav-menu .menu-items{
+    display:flex;
+    justify-content:center;
+}
+nav .nav-menu .menu-items li{
+    position:relative;
+}
+nav .nav-menu .menu-items > li > a{
+    padding:0.5rem 1.2rem;
+    border-radius:5px;
+    transition-duration: 0.7s;
+    font-weight:800;
+}
+.sub-menu{
+    position:absolute;
+    left:-2.5rem;
+    right:0;
+    z-index:1;
+    margin-top:0.5rem;
+    display:none;
+ }
+.sub-menu .sub-items li{
+    padding:0.5rem;
+    text-align: center;
+    border-bottom:slategray 2px solid;
+    background-color:rgb(247, 235, 235);
+}
+.sub-menu .sub-items li:hover{
+    background-color:rgb(224, 219, 219);   
+}
+nav .nav-menu .menu-items > li > a:hover{
+    background-color:rgb(247, 235, 235);
+}
+nav .nav-menu .menu-items > li:hover .sub-menu{
+  display: block; 
+}
+.sport-header{
+    background:url(../image/featured.jpg) center center/cover;
+    width:100%;
+    height:500px;
+    text-align: justify;
+    box-sizing: border-box;
+    padding-top:5rem;
+    padding-right:20vw;
+    padding-left:2rem;
+    color:#fff;
+}
+.sport-header h2{
+    background-color:var(--h2-color);
+    display:inline-block;
+    padding:0.5rem;
+    border-radius:10px;
+}
+.sport-header h1{
+    color: #000;
+}
+.sport-header p{
+    font-weight:900px;
+}
+.sport-header a{
+    padding:0.5rem;
+    background-color:var(--a-color);
+    border-radius:10px;
+    font-weight:900px;
+    display:inline-block;
+    margin-top:0.5rem;
+}
+.sport-header a:hover{
+    background-color:rgba(255, 1, 1, 0.288);
+    color:#fff;
+}
+.articles img{
+   width:100%; 
+}
+.articles{
+    margin-top:1rem;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 1rem;
+}
+.articles a{
+    background-color: #fff;
+    padding:1rem;
+    transition-duration:1s;
+}
+.articles a:first-child{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column: 1/span 2;
+    gap:1rem;
+}
+.articles a:last-child{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column:2/span 2;
+    gap:1rem;
+
+}
+.ent-color{
+    background-color:var(--ent-color);
+    display: inline-block;
+    padding:0.5rem;
+    border-radius:10px;
+}
+.spt-color{
+    background-color:var(--spt-color);
+    display: inline-block;
+    padding:0.5rem;
+    border-radius:10px;
+    color: #000;
+}
+.tec-color{
+    background-color:var(--tec-color);
+    display: inline-block;
+    padding:0.5rem;
+    border-radius:10px;
+}
+.articles img{
+    width:100%;
+    border-radius:10px;
+}
+.articles a:hover{
+    transform:scale(1.02);
+    border:2px steelblue solid;
+}
+.articles a:nth-child(2){
+    background-color: #000;
+    color:#fff;
+}
+.articles a:nth-child(6){
+    background-color:rgb(212, 27, 27);
+    color:#fff;
+}
+.bottom-header{
+    margin-top:1rem;
+    color:#fff;
+    background-color:rgb(33, 34, 36);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1rem;
+    padding:0 0.5rem;
+}
+.bottom-header footer{
+    grid-column:1/span 4;
+    text-align: center;
+    background-color: rgba(126, 108, 108, 0.89);
+    padding:0.5rem;
+    color: #000;
+}
+.bottom-header input[type='email']{
+    width:100%;
+    padding:0.5rem;
+    margin-bottom:0.5rem;
+    border-radius: 10px;
+}
+.bottom-header input[type='button']{
+    width:110%;
+    padding:0.2rem;
+    margin-bottom:0.5rem;
+    border-radius: 10px;
+    transition-duration:1s;
+    background-color:rgb(212, 27, 27);
+}
+.bottom-header input[type='button']:hover{
+    background-color: #000;
+    color:#fff;
+}
+.bottom-header img{
+    width:100%;
+    margin-top:1rem;
+}
+.bottom-header ul li{
+    padding:0.2rem;
+    margin:0.5rem;
+    border-bottom:2px snow solid;
+    transition-duration:1s;
+}
+.bottom-header a{
+    transition-duration:1s;
+}
+.bottom-header a:hover{
+    background-color:green;
+    transform:scale(1.1);
+}
+
+.bottom-header ul li:hover{
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius:10px;
+    transform: translateX(10px);
+}
+.article-cotainer{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:1rem;
+}
+.article-cotainer img{
+    width:100%;
+    border-radius:2rem;
+}
+.article-cotainer .article-header{
+    background-color: #fff;
+    padding:2rem;
+    grid-row:1/span 3;
+}
+.article-cotainer .article-header .ent-box{
+    background-color:silver;
+    display:flex;
+    padding:0 1rem;
+    justify-content: space-between;
+    border-radius:1rem;
+    align-items: center;
+}
+.article-cotainer .join-box,.about-header .join-box{
+    background-color:yellow;
+    padding:0 0.5rem;
+    text-align: center;
+    height:190px;
+}
+.article-cotainer .join-box a,.about-header .join-box a{
+        background-color: violet;
+        padding:0.6rem 5rem;
+        border-radius:1rem;
+        transition-duration:0.7s;
+}
+.article-cotainer .join-box a:hover,.about-header .join-box a:hover{
+    background-color:rgba(19, 15, 19, 0.726);
+    color:#fff;
+}
+.Categories-box{
+    background-color: #fff;
+    padding:0.5rem 1rem;
+}
+.Categories-box h1 ,.Categories-box ul{
+    padding: 0;
+    margin:0;
+    padding:0.5rem 0;
+}
+.Categories-box ul li{
+    margin:1rem 0;
+    border-bottom: 2px silver solid;
+    padding:0.5rem;
+}
+.Categories-box ul li a{
+    padding:0.4rem 0.2rem;
+    padding-right:12rem;
+    border-radius:1rem;
+    transition-duration:0.5s
+}
+.Categories-box ul li a:hover{
+    background-color:rgb(230, 228, 228);
+    
+}
+.about-header{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:1rem
+}
+.about-header .text-box{
+    background-color: #fff;
+    padding:1rem;
+}
+.about-header .text-box p{
+    text-align: justify;
+}

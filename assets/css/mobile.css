@@ -1,0 +1,35 @@
+nav{
+    grid-template-columns:1fr;
+    text-align: center;
+}
+.sport-header{
+    padding:2rem ;
+}
+.sport-header h1{
+    color:#fff;
+    text-shadow: 2px 2px 8px rgb(7, 7, 7);
+}
+.articles{
+    display:flex;
+    flex-direction: column;
+}
+.bottom-header{
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+}
+.bottom-header input[type='email'],.bottom-header input[type='button']{
+    width:11rem;
+}
+.about-header{
+    grid-template-columns: 1fr;
+}
+.article-cotainer{
+    grid-template-columns:1fr;
+}.article-cotainer .article-header .ent-box{
+    background-color:silver;
+    display:flex;
+    flex-direction: column;
+    padding:0.5rem;
+}
+
